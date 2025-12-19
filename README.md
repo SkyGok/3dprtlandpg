@@ -127,14 +127,32 @@ The checkout flow is structured for Stripe integration:
 
 ## 🚢 Deployment
 
+### GitHub Pages (Recommended)
+
+**Automatic deployment is already configured!**
+
+1. Push your code to GitHub
+2. Go to repository **Settings** → **Pages**
+3. Select **GitHub Actions** as source
+4. Your site will auto-deploy on every push to `main`
+
+See [GITHUB_PAGES.md](./GITHUB_PAGES.md) for detailed instructions.
+
+**Your site will be live at:**
+```
+https://YOUR_USERNAME.github.io/YOUR_REPO_NAME/
+```
+
+### Other Hosting Options
+
 1. Build the project: `npm run build`
 2. Deploy `dist/` folder to:
-   - Vercel
-   - Netlify
-   - Cloudflare Pages
+   - **Vercel** - `vercel deploy`
+   - **Netlify** - Drag & drop `dist` folder
+   - **Cloudflare Pages** - Connect GitHub repo
    - Or any static hosting service
 
-3. Ensure environment variables are set in your hosting platform
+3. For production with Supabase, ensure environment variables are set in your hosting platform
 
 ## 📝 Notes
 
